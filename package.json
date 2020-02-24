@@ -1,0 +1,29 @@
+{
+  "name": "datingapp",
+  "version": "1.0.0",
+  "description": "Datingapp voor Project Tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo Hello World!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artoer/fed.git"
+  },
+  "keywords": [
+    "datingapp",
+    "project",
+    "tech"
+  ],
+  "author": "Arthur Menken",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artoer/fed/issues"
+  },
+  "homepage": "https://github.com/artoer/fed#readme",
+  "dependencies": {
+    "camelcase": "^5.3.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15"
+  }
+}
