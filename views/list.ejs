@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/css/styles.css">
+ <title>Movies - My movie website</title>
+</head>
+
+<body>
+
+    <h1>Your Gallery</h1>
+    <% for (var index = 0; index < data.length; index++) { %>
+    <h2>
+        <a href="/<%= data[index].id %>">
+            <%= data[index].title %>
+        </a>
+    </h2>
+    <p>
+        <%= data[index].description %>
+    </p>
+    <% } %>
+
+    <p>
+        <a href=/upload>Add a picture</a> </p>
+        <% console.log(data) %>
+          </body> </html>
