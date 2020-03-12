@@ -17,6 +17,7 @@ h1 {
 
 h2 {
     text-align: center;
+    padding: 1em 0;
 }
 
 h2 a {
@@ -89,22 +90,24 @@ h2 a:hover {
     display: grid;
     width: 80%;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(calc(33% - 5%), 1fr));
-    grid-gap: 5%;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33% - 2.5%), 1fr));
+    grid-gap: 2.5%;
 }
 
 form {
     width: 50%;
     margin: 0 auto;
+    border-radius: 5px;
     padding: 2.5% 5%;
     border: 1px solid deeppink;
     background-color: #fff;
 }
 
-form input,textarea {
+form input,
+textarea {
     box-sizing: border-box;
-    width:100%;
-    resize:none;
+    width: 100%;
+    resize: none;
     padding: .2rem .2rem;
     margin: .5rem 0;
 }
@@ -117,22 +120,71 @@ form button {
     border: none;
     margin-top: 2em;
     padding: .5rem 1rem;
-    background-color:hotpink;
+    background-color: hotpink;
 
 }
 
 form button:first-of-type {
-    float:right;
-background-color:deeppink;
+    float: right;
+    background-color: deeppink;
 }
 
 form button a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
 form label {
     margin: 0 auto;
+}
+
+p {
+    text-align: center;
+    padding: 1em 0;
+}
+
+img {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    background-color: whitesmoke;
+    filter: drop-shadow(0 0 0.1rem black);
+    transition: 250ms;
+}
+
+section:hover {
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: 250ms;
+}
+
+figure {
+
+    width: auto;
+    border: 1px solid deeppink;
+    border-radius: 5px;
+    display: block;
+    margin: 5vh auto;
+    background-color: #fff;
+}
+
+figure img {
+    min-height: 50vh;
+    max-height: 75vh;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em 0;
 }
 
 /*

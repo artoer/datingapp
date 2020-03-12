@@ -4,30 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/css/styles.css">
- <title>DatingApp - My Gallery</title>
+    <title>DatingApp - My Gallery</title>
 </head>
 
 <body>
 
     <h1>Jouw gallerij</h1>
     <div id="grid-container">
-    <% for (var index = 0; index < data.length; index++) { %>
-    
-    <section>
-    <h2>
-        <a href="/<%= data[index].id %>">
-            <%= data[index].title %>
+        <% for (var index = 0; index < data.length; index++) { %>
+
+       <a href="/<%= data[index].id %>">
+        <section>
+            
+            <h2>
+
+                <%= data[index].title %>
+
+            </h2>
+            <img src="static/upload/<%= data[index].photo %>">
+            <p>
+                <%= data[index].description %>
+            </p>
+        </section>
         </a>
-    </h2>
-    <p>
-        <%= data[index].description %>
-    </p>
-    </section>
-    <% } %>
+        <% } %>
     </div>
-    
+
 
     <button id="upload">
-        <a href=/upload>Upload a picture</a> </button>
-        <% console.log(data) %>
-          </body> </html>
+        <a href=/upload>Upload a picture</a> </button> <% console.log(data) %>
+</body>
+
+</html>

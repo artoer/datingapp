@@ -3,9 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel=stylesheet href=/index.css> <title>Movies - My movie website</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/css/styles.css">
+    <title>Movies - My movie website</title>
 </head>
 
 <body>
-         <% console.log(data) %>
+   <% console.log(data) %>
+    <figure>
+        <h2>
+        <%= data.title %>
+    </h2>
+    <% if (data.photo) { %>
+    <img src="static/upload/<%= data.photo %>">
+    <% } %>
+    <figcaption>
+        <%= data.description %>
+    </figcaption></figure>
 </body>
