@@ -4,6 +4,7 @@
 }
 
 html {
+    position: relative;
     font-family: 'Roboto', 'Arial', sans-serif;
     background-color: whitesmoke;
 }
@@ -89,7 +90,9 @@ h2 a:hover {
     padding: 2.5% 5%;
     display: grid;
     width: 80%;
+    height: 100%;
     margin: 0 auto;
+    margin-bottom: 15vh;
     grid-template-columns: repeat(auto-fill, minmax(calc(33% - 2.5%), 1fr));
     grid-gap: 2.5%;
 }
@@ -171,11 +174,12 @@ figure {
     border: 1px solid deeppink;
     border-radius: 5px;
     display: block;
-    margin: 5vh auto;
+    margin: 5vh auto 10vh auto;
     background-color: #fff;
 }
 
 figure img {
+    width: auto;
     min-height: 50vh;
     max-height: 75vh;
     display: block;
@@ -187,24 +191,23 @@ figcaption {
     padding: 1em 0;
 }
 
-/*
 #back-btn {
-    box-sizing: border-box;
     position: absolute;
-    background-color: lightpink;
-    font-size: 3vh;
+    bottom: 2.5vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1em;
+    border: none;
     padding: .5rem 1rem;
-    top: 7.5vh;
-    left: 5%;
-    text-decoration: none;
-    color: black;
-    
+    background-color: hotpink;
     transition: 250ms;
 }
 
 #back-btn:hover {
-    background-color: black;
-    color:white;
+    background-color: white;
+    color: black;
+    filter: drop-shadow(0 0 0.1rem black);
     transition: 250ms;
 }
-*/
