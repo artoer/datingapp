@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/css/styles.css">
- <title>Movies - My movie website</title>
+ <title>DatingApp - My Gallery</title>
 </head>
 
 <body>
 
-    <h1>Your Gallery</h1>
+    <h1>Jouw gallerij</h1>
+    <div id="grid-container">
     <% for (var index = 0; index < data.length; index++) { %>
+    
+    <section>
     <h2>
         <a href="/<%= data[index].id %>">
             <%= data[index].title %>
@@ -19,9 +22,12 @@
     <p>
         <%= data[index].description %>
     </p>
+    </section>
     <% } %>
+    </div>
+    
 
-    <p>
-        <a href=/upload>Add a picture</a> </p>
+    <button id="upload">
+        <a href=/upload>Upload a picture</a> </button>
         <% console.log(data) %>
           </body> </html>

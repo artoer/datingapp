@@ -1,4 +1,158 @@
 * {
-    color: pink;
-    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-color: whitesmoke;
+}
+
+h1 {
+    margin: 5vh 20%;
+    font-size: 7.5vh;
+    text-align: center;
+    color: deeppink;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+#upload {
+    display: flex;
+    justify-content: space-around;
+
+    min-height: 5em;
+    min-width: 5em;
+    height: 7.5vw;
+    width: 7.5vw;
+    max-height: 8em;
+    max-width: 8em;
+    border: none;
+
+    color: white;
+    font-size: 1em;
+
+    background-image: linear-gradient(pink, deeppink);
+    border-radius: 50%;
+    position: fixed;
+    right: 15vw;
+    bottom: 10vh;
+
+    transition: 250ms;
+
+}
+
+#upload:hover {
+    filter: drop-shadow(0 0 0.25rem black);
+    transform: scale(1.1);
+    transition: 250ms;
+}
+
+#upload a {
+    display: block;
+    opacity: 0;
+    height: inherit;
+    width: inherit;
+}
+
+#upload::after {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '+';
+    display: block;
+
+    color: white;
+    text-decoration: none;
+    font-size: calc(1.5em + 3vw);
+    font-weight: 100;
+}
+
+#grid-container {
+    border: 1px solid deeppink;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2.5% 5%;
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33% - 5%), 1fr));
+    grid-gap: 5%;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2.5% 5%;
+    border: 1px solid deeppink;
+    background-color: #fff;
+}
+
+form input,textarea {
+    box-sizing: border-box;
+    width:100%;
+    resize:none;
+    padding: .2rem .2rem;
+    margin: .5rem 0;
+}
+
+form button {
+    width: 25%;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    margin-top: 2em;
+    padding: .5rem 1rem;
+    background-color:hotpink;
+
+}
+
+form button:first-of-type {
+    float:right;
+background-color:deeppink;
+}
+
+form button a {
+    color:white;
+    text-decoration: none;
+}
+
+form label {
+    margin: 0 auto;
+}
+
+/*
+#back-btn {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: lightpink;
+    font-size: 3vh;
+    padding: .5rem 1rem;
+    top: 7.5vh;
+    left: 5%;
+    text-decoration: none;
+    color: black;
+    
+    transition: 250ms;
+}
+
+#back-btn:hover {
+    background-color: black;
+    color:white;
+    transition: 250ms;
+}
+*/
