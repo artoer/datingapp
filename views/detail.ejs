@@ -9,7 +9,6 @@
 
 <body>
    <% console.log(data) %>
-               <button id="back-btn"><a href="/.">Back</a></button>
     <figure>
         <h2>
         <%= data.title %>
@@ -19,5 +18,8 @@
     <% } %>
     <figcaption>
         <%= data.description %>
+         <a id="back-btn" href="/.">Back</a>
+         <a id="delete-btn" href="/delete">Delete</a>
     </figcaption></figure>
+    
 </body>

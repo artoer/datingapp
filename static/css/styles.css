@@ -116,7 +116,6 @@ textarea {
 }
 
 form button {
-    width: 25%;
     border-radius: 5px;
     color: white;
     font-size: 1.1em;
@@ -127,12 +126,8 @@ form button {
 
 }
 
-form button:first-of-type {
-    float: right;
+form button {
     background-color: deeppink;
-}
-
-form button a {
     color: white;
     text-decoration: none;
 }
@@ -142,13 +137,12 @@ form label {
 }
 
 p {
-    text-align: center;
-    padding: 1em 0;
+    padding: 1em;
 }
 
 img {
     display: block;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -187,14 +181,15 @@ figure img {
 }
 
 figcaption {
-    text-align: center;
-    padding: 1em 0;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em 0;
 }
 
 #back-btn {
     position: absolute;
     bottom: 2.5vh;
-    left: 50%;
+    left: 33%;
     transform: translate(-50%, 0);
     border-radius: 5px;
     color: white;
@@ -206,6 +201,27 @@ figcaption {
 }
 
 #back-btn:hover {
+    background-color: white;
+    color: black;
+    filter: drop-shadow(0 0 0.1rem black);
+    transition: 250ms;
+}
+
+#delete-btn {
+    position: absolute;
+    bottom: 2.5vh;
+    left: 66%;
+    transform: translate(-50%, 0);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    padding: .5rem 1rem;
+    background-color: red;
+    transition: 250ms;
+}
+
+#delete-btn:hover {
     background-color: white;
     color: black;
     filter: drop-shadow(0 0 0.1rem black);
