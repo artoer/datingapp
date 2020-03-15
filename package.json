@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/artoer/fed.git"
+    "url": "git+https://github.com/artoer/datingapp.git"
   },
   "keywords": [
     "datingapp",
@@ -18,9 +18,9 @@
   "author": "Arthur Menken",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/artoer/fed/issues"
+    "url": "https://github.com/artoer/datingapp/issues"
   },
-  "homepage": "https://github.com/artoer/fed#readme",
+  "homepage": "https://github.com/artoer/datingapp#readme",
   "dependencies": {
     "array-find": "^1.0.0",
     "body-parser": "^1.19.0",
