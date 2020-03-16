@@ -1,6 +1,8 @@
 # Mijn DatingApp
 Voor Project Tech 2019-2020, door Arthur van klas Tech 3
 
+![Gevulde Gallerypage](/images/4.png)
+
 ## Concept
 Het concept voor mijn feature is een gallery page, waarbij er een overzicht van foto's te zien is, de foto's kunnen in detail worden bekeken. Er kunnen nieuwe foto's geüpload worden en de foto's kunnen ook verwijderd worden.
 
@@ -39,6 +41,15 @@ In week 3 heb ik mij bezig gehouden met de input, voor mijn job story heb ik een
 
 ### Week 4
 Week 4 was erg pittig, als Windows gebruiker was Mongo niet vanzelfsprekend en het duurde een tijdje voordat ik het aan de praat kreeg. Het toffe aan een database is dat de gallerij altijd gevuld blijft, zelfs als ik de app uitzet. Met behulp van een youtube-video is het mij ook gelukt om een delete functie toe te voegen, en misschien behoort bewerken ook nog tot de toekomstige mogelijkheden.
+
+## Voorbeelden
+![Lege Gallerypage](/images/1.png)
+
+![Uploadformulier](/images/2.png)
+
+![Detailpagina](/images/3.png)
+
+![Gevulde Gallerypage](/images/4.png)
 
 ## Bronnen
 - https://docs.microsoft.com/en-us/windows/nodejs/setup-on-windows
