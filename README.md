@@ -4,6 +4,9 @@ Voor Project Tech 2019-2020, door Arthur van klas Tech 3
 ## Concept
 Het concept voor mijn feature is een gallery page, waarbij er een overzicht van foto's te zien is, de foto's kunnen in detail worden bekeken. Er kunnen nieuwe foto's geüpload worden en de foto's kunnen ook verwijderd worden.
 
+### Job story
+> Wanneer ik op zoek ben naar een match wil ik op een overzichtelijke manier de foto’s van andere gebruikers kunnen bekijken zodat ik snel een goed beeld kan vormen van mijn potentiele match.
+
 ## Installatie
 1. clone de datingapp repository
 2. navigeer met de terminal naar de repository
