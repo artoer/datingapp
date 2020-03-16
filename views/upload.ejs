@@ -9,12 +9,12 @@
 
 <body>
     <h1>Upload een foto</h1>
-    <form action=/ method=post enctype=multipart/form-data> <label>Title <input name=title></label>
+    <form action=/ method=post enctype=multipart/form-data> <label required>Title <input name=title></label>
         <label>
             Description
             <textarea name=description rows=5></textarea>
         </label>
-        <label>
+        <label required>
             Foto
             <input name=photo type=file accept=image/*> </label> 
             
