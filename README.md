@@ -24,5 +24,11 @@ description:  string
 photo:        file
 ```
 
-
-
+## Bronnen
+- https://docs.microsoft.com/en-us/windows/nodejs/setup-on-windows
+- https://expressjs.com/en/starter/hello-world.html
+- https://expressjs.com/en/starter/faq.html
+- https://ejs.co/
+- De slides van Backend 
+- Web Dev Simplified (https://www.youtube.com/watch?v=qj2oDkvc4dQ)
+- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
