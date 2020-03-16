@@ -19,7 +19,9 @@
     <figcaption>
         <%= data.description %>
          <a id="back-btn" href="/.">Back</a>
-         <a id="delete-btn" href="/delete">Delete</a>
+<!--         BRON: https://www.youtube.com/watch?v=UIf1Lh9OZ-k-->
+         <form method="POST" action="<%= data._id %>?_method=DELETE"><button type="submit">Delete</button></form>
+         
     </figcaption></figure>
     
 </body>

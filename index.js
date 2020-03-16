@@ -1,3 +1,4 @@
+//Include packages
 const express = require('express')
 const slug = require('slug')
 const bodyParser = require('body-parser')
@@ -9,11 +10,12 @@ const upload = multer({
     dest: 'static/upload/'
 })
 const mongo = require('mongodb')
+const methodOverride = require('method-override')
 
 require('dotenv').config()
 
-var db = null
-var url = 'mongodb://' + process.env.DB_HOST + ':' + process.env.DB_PORT
+let db = null
+let url = 'mongodb://' + process.env.DB_HOST + ':' + process.env.DB_PORT
 
 mongo.MongoClient.connect(url, function (err, client) {
     if (err) throw err
@@ -22,8 +24,12 @@ mongo.MongoClient.connect(url, function (err, client) {
 
 app.listen(port, () => console.log(`De app is nu online op http://localhost:${port}!`))
 
+//Declaring static folder
 app.use('/static', express.static('static'));
 
+app.use(methodOverride('_method'))
+
+//Declaring views for ejs
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
@@ -31,17 +37,19 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
+//Routing
 app.post('/', upload.single('photo'), add)
 app.get('/', pictures)
-app.delete('/', remove)
 app.get('/upload', form)
 app.get('/:id', picture)
+// BRON: https://www.youtube.com/watch?v=UIf1Lh9OZ-k
+app.delete('/:id', remove)
 
-app.use(function (req, res, next) {
-    res.status(404).send('404 Page Not Found!')
-})
+//app.use(function (req, res, next) {
+//    res.status(404).send('404 Page Not Found!')
+//})
 
-//Rendert list.ejs met alle data (alle foto's)
+//Using mongoose
 function pictures(req, res, next) {
     db.collection('picture').find().toArray(done)
 
@@ -57,7 +65,7 @@ function pictures(req, res, next) {
 }
 
 function picture(req, res, next) {
-    var id = req.params.id
+    let id = req.params.id
     db.collection('picture').findOne({
         _id: mongo.ObjectID(id)
     }, done)
@@ -90,7 +98,7 @@ function add(req, res, next) {
 }
 
 function remove(req, res, next) {
-    var id = req.params.id
+    let id = req.params.id
     db.collection('picture').deleteOne({
         _id: mongo.ObjectID(id)
     }, done)
@@ -99,12 +107,9 @@ function remove(req, res, next) {
         if (err) {
             next(err)
         } else {
-            res.json({
-                status: 'ok'
-            })
-        }
+            res.redirect('/')
     }
-}
+}}
 
 function form(req, res) {
     res.render('upload.ejs')
