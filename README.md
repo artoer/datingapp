@@ -1,4 +1,6 @@
 # Mijn DatingApp
+**I worked with node and express for a school assignment, unfortunately I did not end up finishing this class. I also learned a lot about using GitHub.**
+
 Voor Project Tech 2019-2020, door Arthur van klas Tech 3
 
 ![Gevulde Gallerypage](/images/4.png)
